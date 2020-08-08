@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jera Filmes</title>
+</head>
+<body>
+    <h1>Usando Fetch</h1>
+    <script type="text/javascript">
+        console.log('Usando Fetch');
+        fetch('https://api.themoviedb.org/3/movie/550?api_key=bdafd4264b0e414b4f6aed4025a04c70')
+        .then(function(response){
+            return response.json();
+        })
+        .then(function(data){
+            console.log(data);
+        })
+    </script>
+</body>
+</html>
